@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS ieqi_logs;
+
+CREATE TABLE ieqi_logs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  device_id TEXT NOT NULL,
+  temperature REAL NOT NULL,
+  humidity REAL NOT NULL,
+  light INTEGER NOT NULL,
+  ieqi REAL NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

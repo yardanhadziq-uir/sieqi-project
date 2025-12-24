@@ -1,0 +1,13 @@
+name = "sieqi-backend"
+main = "src/index.js"
+compatibility_date = "2024-12-23"
+
+# D1 Database Binding
+# Run `npx wrangler d1 create sieqi-db` to get your database_id
+[[d1_databases]]
+binding = "DB"
+database_name = "sieqi-db"
+database_id = "75a806fe-e913-42db-afc9-cc2ac7e3724d" # Replace with actual ID after creating DB
+
+[vars]
+API_KEY = "sieqi-secret-key-123" # Change this in production secrets
